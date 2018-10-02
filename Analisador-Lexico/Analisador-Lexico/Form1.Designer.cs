@@ -29,29 +29,21 @@
         private void InitializeComponent()
         {
             this.btnCarregar = new System.Windows.Forms.Button();
-            this.tbInput = new System.Windows.Forms.TextBox();
             this.lbLexemas = new System.Windows.Forms.ListBox();
             this.lbReservadas = new System.Windows.Forms.ListBox();
             this.lbErros = new System.Windows.Forms.ListBox();
             this.btnAnalisar = new System.Windows.Forms.Button();
+            this.rtbInput = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // btnCarregar
             // 
-            this.btnCarregar.Location = new System.Drawing.Point(30, 24);
+            this.btnCarregar.Location = new System.Drawing.Point(30, 9);
             this.btnCarregar.Name = "btnCarregar";
             this.btnCarregar.Size = new System.Drawing.Size(75, 23);
             this.btnCarregar.TabIndex = 0;
             this.btnCarregar.Text = "Carregar";
             this.btnCarregar.UseVisualStyleBackColor = true;
-            // 
-            // tbInput
-            // 
-            this.tbInput.Location = new System.Drawing.Point(30, 66);
-            this.tbInput.Multiline = true;
-            this.tbInput.Name = "tbInput";
-            this.tbInput.Size = new System.Drawing.Size(236, 148);
-            this.tbInput.TabIndex = 1;
             // 
             // lbLexemas
             // 
@@ -79,39 +71,47 @@
             // 
             // btnAnalisar
             // 
-            this.btnAnalisar.Location = new System.Drawing.Point(30, 220);
+            this.btnAnalisar.Location = new System.Drawing.Point(30, 457);
             this.btnAnalisar.Name = "btnAnalisar";
             this.btnAnalisar.Size = new System.Drawing.Size(236, 23);
             this.btnAnalisar.TabIndex = 5;
             this.btnAnalisar.Text = "Analisar";
             this.btnAnalisar.UseVisualStyleBackColor = true;
+            this.btnAnalisar.Click += new System.EventHandler(this.btnAnalisar_Click);
+            // 
+            // rtbInput
+            // 
+            this.rtbInput.Location = new System.Drawing.Point(30, 50);
+            this.rtbInput.Name = "rtbInput";
+            this.rtbInput.Size = new System.Drawing.Size(236, 401);
+            this.rtbInput.TabIndex = 6;
+            this.rtbInput.Text = "";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(910, 492);
+            this.Controls.Add(this.rtbInput);
             this.Controls.Add(this.btnAnalisar);
             this.Controls.Add(this.lbErros);
             this.Controls.Add(this.lbReservadas);
             this.Controls.Add(this.lbLexemas);
-            this.Controls.Add(this.tbInput);
             this.Controls.Add(this.btnCarregar);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button btnCarregar;
-        private System.Windows.Forms.TextBox tbInput;
         private System.Windows.Forms.ListBox lbLexemas;
         private System.Windows.Forms.ListBox lbReservadas;
         private System.Windows.Forms.ListBox lbErros;
         private System.Windows.Forms.Button btnAnalisar;
+        private System.Windows.Forms.RichTextBox rtbInput;
     }
 }
 
