@@ -46,6 +46,17 @@ namespace Analisador_Lexico
                     break;
 
                 case 1:
+                        switch (caracter[pos])
+                        {
+                            case '/':
+                                lexema += caracter[pos];
+                                estado = 2;
+                                pos++;
+                                break;
+
+                            case '*':
+                                lexe
+                        }
                     break;
 
 
