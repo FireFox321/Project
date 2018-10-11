@@ -38,7 +38,7 @@ namespace Analisador_Lexico
             }
         }
 
-        public static bool Op3(char c2, char c3)
+        public static bool Op3(char c1, char c2, char c3)
         {
 
             switch (c2)

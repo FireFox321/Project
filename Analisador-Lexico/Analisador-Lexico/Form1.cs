@@ -19,6 +19,7 @@ namespace Analisador_Lexico
 
         private void btnAnalisar_Click(object sender, EventArgs e)
         {
+            //Consegui usar o Github no VS :-D
             char[] texto = rtbInput.Text.ToCharArray();
 
             bool op1 = false;
@@ -31,7 +32,7 @@ namespace Analisador_Lexico
             foreach (char caracter in texto)
             {
 
-                if (op2) op3 = Operadores.Op3(caracter_anterior, caracter);
+                if (op2) op3 = Operadores.Op3('?', caracter_anterior, caracter);
                 if (op1) op2 = Operadores.Op2(caracter_anterior, caracter);
                 op1 = Operadores.Op1(caracter);
 
