@@ -20,7 +20,7 @@ namespace Analisador_Lexico
         private void btnAnalisar_Click(object sender, EventArgs e)
         {
             Fonte f = new Fonte(rtbInput.Text);
-            MessageBox.Show(f.Ler().ToString());
+            MessageBox.Show(f.CAtual.ToString());
         }
     }
 }

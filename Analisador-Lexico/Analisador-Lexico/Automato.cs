@@ -6,10 +6,18 @@ using System.Threading.Tasks;
 
 namespace Analisador_Lexico
 {
-    class LexOp : ElementoNotacional
+    class Automato
     {
-        public LexOp(Fonte f) : base(f)
+        internal bool EstadoFinal { get; }
+
+        internal void Transicao()
         {
+
+        }
+
+        internal Automato()
+        {
+
         }
     }
 }

@@ -8,5 +8,14 @@ namespace Analisador_Lexico
 {
     class ElementoNotacional
     {
+        readonly int linha;
+        readonly int coluna;
+        StringBuilder Texto ;
+
+        public ElementoNotacional(Fonte f)
+        {
+            linha = f.Linha;
+            coluna = f.Coluna;
+        }
     }
 }

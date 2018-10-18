@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Analisador.cs" />
+    <Compile Include="Automato.cs" />
     <Compile Include="ElementoNotacional.cs" />
     <Compile Include="Fonte.cs" />
     <Compile Include="Form1.cs">
